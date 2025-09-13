@@ -3,54 +3,63 @@ import PromptCategoryCard from '@/components/PromptCategoryCard';
 
 const promptCategories = [
   {
+    id: 'chatbot-assistant',
     icon: '💬',
     title: 'Chatbot Assistant',
     description: 'Conversational agents for support/onboarding',
     bgColor: 'bg-blue-100'
   },
   {
+    id: 'copywriting',
     icon: '✍️',
     title: 'Copywriting',
     description: 'Ads, landing pages, emails',
     bgColor: 'bg-orange-100'
   },
   {
+    id: 'image-generation',
     icon: '🖼️',
     title: 'Image Generation',
     description: 'Midjourney, DALL·E, Stable Diffusion',
     bgColor: 'bg-green-100'
   },
   {
+    id: 'learning-tutors',
     icon: '📚',
     title: 'Learning & Tutors',
     description: 'Study guides and lesson creation',
     bgColor: 'bg-purple-100'
   },
   {
+    id: 'coding-assistant',
     icon: '💻',
     title: 'Coding Assistant',
     description: 'Functions, debugging, refactoring',
     bgColor: 'bg-gray-100'
   },
   {
+    id: 'podcast-scripts',
     icon: '🎙️',
     title: 'Podcast & Scripts',
     description: 'Outlines, questions, scripts',
     bgColor: 'bg-indigo-100'
   },
   {
+    id: 'research',
     icon: '🔬',
     title: 'Research',
     description: 'Summarize, compare, extract insights',
     bgColor: 'bg-yellow-100'
   },
   {
+    id: 'business-strategy',
     icon: '📈',
     title: 'Business & Strategy',
     description: 'SWOT, competitors, GTM plans',
     bgColor: 'bg-red-100'
   },
   {
+    id: 'creative-writing',
     icon: '✏️',
     title: 'Creative Writing',
     description: 'Plots, characters, vivid scenes',
@@ -90,9 +99,10 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {promptCategories.map((category, index) => (
+            {promptCategories.map((category) => (
               <PromptCategoryCard
-                key={index}
+                key={category.id}
+                id={category.id}
                 icon={category.icon}
                 title={category.title}
                 description={category.description}
