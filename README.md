@@ -127,4 +127,6 @@ The main brand color is purple (`purple-600`). To change it, search and replace 
 
 ## License
 
-MIT License
+MIT License# Live Demo
+
+Once deployed, add your Vercel URL here: https://your-app.vercel.app
